@@ -1,4 +1,4 @@
-/*
+	/*
    Find file command for the Midnight Commander
 
    Copyright (C) 1995-2014
@@ -511,12 +511,10 @@ find_parameters (char **start_dir, ssize_t * start_dir_len,
     const char *file_pattern_label = N_("&Using shell patterns");
     const char *file_skip_hidden_label = N_("S&kip hidden");
     const char *file_only_directories_label = N_("Only &directories");
->>>>>>> osp/only-directories
 #ifdef HAVE_CHARSET
     const char *file_all_charsets_label = N_("&All charsets");
 #endif
     const char *file_case_label = N_("Cas&e sensitive");
-    const char *file_skip_hidden_label = N_("S&kip hidden");
 
     /* file content */
     const char *content_content_label = N_("Content:");
@@ -1365,7 +1363,7 @@ do_search (WDialog * h)
                     {
 			is_dir = TRUE;
                         push_directory (tmp_vpath);
-                    else
+                    }else
                         vfs_path_free (tmp_vpath);
                 }
             }
